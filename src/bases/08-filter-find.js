@@ -1,4 +1,4 @@
-import { princess } from "./data/princess";
+import { princess } from "../data/princess";
 
 // const getPrincessById = (id) => {
 //   return princess.find((princess) => {
@@ -12,13 +12,14 @@ import { princess } from "./data/princess";
 
 // console.log(getPrincessById(2));
 
-const getPrincessById = (id) => princess.find((princess) => princess.id === id);
-console.log(getPrincessById(5));
+export const getPrincessById = (id) =>
+  princess.find((princess) => princess.id === id);
+// console.log(getPrincessById(5));
 
-const getPrincessByName = (name) =>
+export const getPrincessByName = (name) =>
   princess.find((princess) => princess.name === name);
 // console.log(getPrincessByName("Olaf"));
 
-const getPrincessByMovie = (movie) =>
+export const getPrincessByMovie = (movie) =>
   princess.filter((princess) => princess.movie === movie);
-console.log(getPrincessByMovie("Frozen"));
+// console.log(getPrincessByMovie("Frozen"));
